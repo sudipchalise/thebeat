@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: poppins;
+}
+i,
+svg {
+	pointer-events: none;
+}
+.sequencer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 90vh;
+	flex-direction: column;
+}
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+	width: 5rem;
+	height: 5rem;
+	margin: 1rem 0.5rem;
+	cursor: pointer;
+}
+.kick-pad {
+	background-color: rgb(130,17,233);
+}
+.snare-pad {
+	background-color: rgb(197,16,233);
+}
+.hihat-pad {
+	background-color: rgb(17,231,197);
+}
+.kick-pad.active{
+	background-color: rgb(56,7,99);
+}
+.snare-pad {
+	background-color: rgb(84,8,99);
+}
+.hihat-pad {
+	background-color: rgb(7,99,84);
+}
+.pad{
+	transition: all 0.5s ease;
+}
+.kick-track,
+.hihat-track,
+.snare-track {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 5rem;
+}
+.kick,
+.hihat,
+.snare {
+	display: flex;
+}
+.controls button{
+	padding: 0.5rem;
+	border: none;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: all 0.5s ease;
+}
+.play{
+	padding: 1rem 2rem;
+	border: none;
+	background-color: #a7a7a7;
+	font-size: 1.5rem;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+select{
+	padding: 0.5rem;
+	margin: 0 1rem;
+	font-size: 1rem;
+}
