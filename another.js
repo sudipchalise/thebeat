@@ -1,6 +1,7 @@
-function sayHello() {
+function sayHelloAndThankYou() {
   console.log("Hello, world!");
+  console.log("Thank you!");
 }
 
-// Call the function to display "Hello, world!"
-sayHello();
+// Call the function to display both messages
+sayHelloAndThankYou();
